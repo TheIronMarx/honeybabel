@@ -1,5 +1,9 @@
 Goals of algorithm
-	* Every set of honeywords must have the same format such that the output of the algorithm does not hint at the characteristics of the password.
+	* Every set of honeywords generated must have the same format such that the output of the algorithm does not hint at the characteristics of the password.
+
+High-level design
+	* Given an input password, this algorithm should identify its characteristics and produce chaffing accordingly.
+	*  
 
 Characteristic [zero, one, two, three, four, Eta]
 	This refers to the number of digits in the password
