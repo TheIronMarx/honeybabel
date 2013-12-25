@@ -1,0 +1,8 @@
+Goals of algorithm
+	* Every set of honeywords must have the same format such that the output of the algorithm does not hint at the characteristics of the password.
+
+Characteristic [zero, one, two, three, four, Eta]
+	This refers to the number of digits in the password
+
+Characteristic [alpha, beta, gamma, deta, epsilon, zeta]
+	This refers to the number of words identified in the password.
