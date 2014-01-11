@@ -2,7 +2,7 @@ Goals of algorithm
 	* Every set of honeywords generated must have the same pattern such that the output of the algorithm does not hint at the characteristics of the password.
 	* Sweetwords must be typo-resistant.
 	* Minimize or eliminate external libraries dependencies.
-	* Language-agnostic -- It would be nice to have pseducode in several different styles, and several different implementations including C, Perl, Java, and Python.
+	* Language-agnostic -- It would be nice to have pseducode in several different styles, and several different implementations including C, Perl, Java, Python, and R.
 
 High-level design
 	* Given an input password, this algorithm should identify its characteristics and produce chaffing accordingly.
@@ -10,7 +10,6 @@ High-level design
 	* In addition to the characteristics, their ratio in respect to the length of the password, and each of their densities throughout the password will matter to the generation.
 	* It would be nice to avoid a dictionary all together, but this may be impossible. Regardless, dictionary should be comprehensive -- only required during honeyword generation, never during authorization.
 	* RNG where possible and with several layers of redundancies. Use trusted RNG.
-
 
 Characteristic [zero, one, two, three, four, Eta]
 	This refers to the number of numeric digits in the password.
