@@ -2,6 +2,19 @@
 
 A honeywords generation algorithm for legacy-UI passwords.
 
+## Terminology
+**Honeywords** - The algorithm introduced by Jules and Rivest wherein false passwords, which are meant to fool an adversary, are stored in a set with a user's genuine password on an authorization system.
+
+**Sweetword** - Strings stored with the password that are not the password. This project generates these.
+
+**Sugarword** - A user's genuine password.
+
+**Honeyword** - Either a sweetword or the sugarword.
+
+**Legacy-UI** - Traditional password schema with no restrictions (intentionally) designed to improve sweetword generation.
+
+**Modern-UI** - A password schema wherein a user is forced to abide by a password schema which allows for superior chaffing strategies for sweetword generation.
+
 ## Abstract
 
 The 2013 paper written by Ari Juels and Ronald L. Rivest, found  [here](http://people.csail.mit.edu/rivest/honeywords/paper.pdf), introduces a fascinating way of detecting offline brute-force password-cracking and masquerading. In a similar style to honeypots, honeywords are stored with the user's password. Should the username/password files be compromised, an adversary is presented with honeywords in addition to a user's genuine password. If this false password is entered into the authentication system with the username, a flag is raised indicating that someone has compromised the files and is attempting to masquerade as the user.
