@@ -12,7 +12,7 @@ High-level design
 	* RNG where possible and with several layers of redundancies. Use trusted RNG.
 
 Characteristic [zero, one, two, three, four, Eta]
-	This refers to the number of numeric digits in the password.
+ This refers to the number of numeric digits in the password.
 
 Characteristic [A, B, C, D, E...]
 	This refers to the number of non-alphanumeric characters in the password.
