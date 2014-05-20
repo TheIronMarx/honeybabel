@@ -15,6 +15,10 @@ A honeywords generation algorithm for legacy-UI passwords.
 
 **Modern-UI** - A password schema wherein a user is forced to abide by a password schema which allows for superior chaffing strategies for sweetword generation.
 
+**Chaff** -
+
+**Chaffing Strategy** -
+
 ## Abstract
 
 The 2013 paper written by Ari Juels and Ronald L. Rivest, found  [here](http://people.csail.mit.edu/rivest/honeywords/paper.pdf), introduces a fascinating way of detecting offline brute-force password-cracking and masquerading. In a similar style to honeypots, honeywords are stored with the user's password. Should the username/password files be compromised, an adversary is presented with honeywords in addition to a user's genuine password. If this false password is entered into the authentication system with the username, a flag is raised indicating that someone has compromised the files and is attempting to masquerade as the user.
@@ -22,4 +26,38 @@ The 2013 paper written by Ari Juels and Ronald L. Rivest, found  [here](http://p
 Despite being a clever scheme, several problems still remain before an implementation can be successfully deployed. The most pertinent of these problems is the honeywords generation. Given a password, this algorithm attempts to create a set of similar-yet-different honeywords of which the adversary will be forced to guess the genuine password. Modern-UI, which forces users to adhere to a more strict standard of creating passwords as per the paper, successfully eliminates the need for this algorithm. However, the logistics and stigma behind forcing users to adhere to a particular pattern of passwords can be infeasable or undesirable. Therefore, this algorithm will attempt to accept *any* given password and produce a set of corresponding honeywords designed to appear as feasible passwords.
 
 ## Roadmap
-Eventually, somebody's going to come along and implement honeywords as a serverside software. Maybe it will be me, maybe not. Either way, it won't be long before they realize the difficulty of the sweetwords generation problem. Hopefully, they will search for it and, hopefully, this repository will be the first result. My goal for this algorithm is to be the de facto, first, last, and best means of generating sweetwords.
+Eventually, somebody's going to come along and implement honeywords as a serverside software. Maybe it will be me, maybe not. Either way, it won't be long before they realize the difficulty of the sweetwords generation problem. Hopefully, they will search for it and, hopefully, this repository will be the first result. My goal for this HoneyBabel algorithm is to be the de facto, first, last, and best means of generating sweetwords.
+
+### Done
+
+### Doing
+
+### Will Do
+
+## How Can You Help?
+A project like this needs tight management. If you're interested in the project, that's great! Contact me first. Tell me what you're all about and we can discuss what you'd like to work on. Sound too formal? Sorry about that! It won't be. This is a passion project of mine and I want to have fun (with others!) doing it. That being said, due to the nature and importance of the project, I can't let any aspect of this escape my review or criticism. I hope you feel the same way as well.
+
+## Why HoneyBabel?
+
+# Gratuity
+A tremendous **"THANK YOU!"** is in order to everyone who has aided in the HoneyBabel project over the months!
+
+# The Algorithm
+The general flow of the algorithm is
+1. Receive string input of password
+2. Determine category or categories of string
+3. Choose number of buckets
+4. Place password in bucket and produce chaff to fill bucket
+5. Fill remaining buckets with respective strategy's chaff
+6. Shuffle set of honeywords and locate password
+7. Return set of honeywords and index of sugarword
+
+## A Diagram
+
+## String Categories
+These should be numbered so chaffing strategies can be associated.
+
+A hierarchical tree may also be appropriate such that a chaffing strategy associated with a string category may be applied to all of its children.
+
+## Chaffing Strategies
+These should be numbered so string categories can be associated
