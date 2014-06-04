@@ -11,7 +11,7 @@ High-level design
 	* It would be nice to avoid a dictionary all together, but this may be impossible. Regardless, dictionary should be comprehensive -- only required during honeyword generation, never during authorization.
 	* RNG where possible and with several layers of redundancies. Use trusted RNG.
 
-Characteristic [zero, one, two, three, four, Eta]
+Characteristic [zero, one, two, three, four, five]
  This refers to the number of numeric digits in the password.
 
 Characteristic [A, B, C, D, E...]
