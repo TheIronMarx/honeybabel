@@ -17,8 +17,14 @@ Characteristic [zero, one, two, three, four, five]
 Characteristic [A, B, C, D, E...]
 	This refers to the number of non-alphanumeric characters in the password.
 
-Characteristic [alpha, beta, gamma, deta, epsilon, zeta...]
+Characteristic [alpha, beta, gamma, delta, epsilon, zeta...]
 	This refers to the number of words identified in the password.
 
 Characteristic [red, orange, yellow, green, blue, indigo, violet]
 	This refers to the number of alphanumeric characters not identified as a word or "noise."
+
+There will probably need to be more characteristics or hierarchical expansion of these characteristics.
+
+An order to the characteristic tests may also matter due to a number possibly representing a letter or word in a password. If a user's password is *2cool4school935*, and God help you if it is, it would be more beneficial to test for identifiable words in the password first (assuming, of course, we can detect 2 as to or too and 4 as for) and then stray numbers at the end in a latter test.
+
+After a password's respective category (collection of characteristics) is calculated,
