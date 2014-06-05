@@ -60,3 +60,10 @@ Whether an implementation of HoneyBabel is used within an entire Honeywords impl
 Given *k* honeywords desired, we need *n* buckets where k/n = 5.
 
 The concept behind buckets is simple, but difficult to prove its effectiveness (like much of the rest of HoneyBabel). The idea is that with buckets, an additional layer of difficulty is presented to an adversary who has decrypted much or all of the authentication database. Because the sugarword exists in a bucket with several sweetwords which *look* like the sugarword, if ever a poor chaffing strategy was chosen (something we wish to minimize anyway) and buckets did not exist, it would theoretically be more likely for the adversary to spot the sugarword amongst the honeywords. Were buckets introduced to this worst-case-scenario, the password would have only been more obvious as the correct password in its respective buckets. As red herrings, buckets containing other strings which appear as passwords present a trap. Ultimately, it's a means of making the adversary's move a little less obvious.
+
+## 3. & 4. Fill Buckets
+I like the bucket metaphor. It stays.
+
+The given password is placed into a bucket and the bucket is filled with four sweetwords from the same chaffing strategy. Each other bucket is filled with five sweetwords, each from the same chaffing strategy.
+
+This is the hardest problem to overcome because of the vast possibilities of strings which may be passwords. Being able to categorize them and then change every one based on a category such that an adversary (well aware of this algorithm) has a difficult time.
