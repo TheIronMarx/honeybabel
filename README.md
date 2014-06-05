@@ -5,19 +5,19 @@ A honeywords generation algorithm for legacy-UI passwords.
 ## Terminology
 **Honeywords** - The algorithm introduced by Jules and Rivest wherein false passwords, which are meant to fool an adversary, are stored in a set with a user's genuine password on an authorization system.
 
-**Sweetword** - Strings stored with the password that are not the password. This project generates these.
+**sweetword** - Strings stored with the password that are not the password. This project generates these.
 
-**Sugarword** - A user's genuine password.
+**sugarword** - A user's genuine password.
 
-**Honeyword** - Either a sweetword or the sugarword.
+**honeyword** - Either a sweetword or the sugarword.
 
-**Legacy-UI** - Traditional password schema with no restrictions (intentionally) designed to improve sweetword generation.
+**legacy-UI** - Traditional password schema with no restrictions (intentionally) designed to improve sweetword generation.
 
-**Modern-UI** - A password schema wherein a user is forced to abide by a password schema which allows for superior chaffing strategies for sweetword generation.
+**modern-UI** - A password schema wherein a user is forced to abide by a password schema which allows for superior chaffing strategies for sweetword generation.
 
-**Chaff** -
+**chaff** - An alteration of the original. It may either be the characters which have changed, or it may refer to words which include (the first definition of) chaff.
 
-**Chaffing Strategy** -
+**chaffing strategy** - A function in which chaff is produced using a single, specific algorithm such as chaffing by numbers.t
 
 ## Abstract
 

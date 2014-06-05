@@ -35,11 +35,10 @@ Characteristics need to be named in a manner that makes seeing which category a 
 
 There will probably need to be more characteristics or hierarchical expansion of these characteristics.
 
----
-
 An order to the characteristic tests may also matter due to a number possibly representing a letter or word in a password. If a user's password is *2cool4school935*, it would be more beneficial to test for identifiable words in the password first (assuming, of course, we can detect 2 as to or too and 4 as for) and then stray numbers at the end in a latter test.
 
 After a password's respective category (collection of characteristics) is calculated, we should be able to choose one of several applicable chaffing strategies and fill a bucket with chaff.
+---
 
 # The Algorithm
 
@@ -53,3 +52,6 @@ After a password's respective category (collection of characteristics) is calcul
 * Shuffle final set of honeywords in from all buckets.
 * Search for sugarword in set and record index
 * Output: A set of honeywords and index of sugarword in the set.
+
+## 1. Input
+Whether an implementation of HoneyBabel is used within an entire Honeywords implementation or as a stand alone honeywords generation program, the algorithm needs input. A password *x* and multiple of five *k* honeywords desired.
