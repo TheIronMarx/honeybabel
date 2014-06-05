@@ -49,6 +49,7 @@ After a password's respective category (collection of characteristics) is calcul
 * Place password in a bucket
 * Fill bucket with chaff from appropriate strategy
 * Fill other buckets with respective chaffing strategies
+	* This is the most difficult problem
 * Shuffle final set of honeywords in from all buckets.
 * Search for sugarword in set and record index
 * Output: A set of honeywords and index of sugarword in the set.
