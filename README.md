@@ -34,13 +34,18 @@ Eventually, somebody's going to come along and implement honeywords as a servers
 
 ### Will Do
 
+### Won't Do
+* Encryption. Returned words are not encrypted. This is the job of the Honeywords developer. This is not authentication software, this is a tool for a tool which will augment authentication software.
+
 ## How Can You Help?
 A project like this needs tight management. If you're interested in the project, that's great! Contact me first. Tell me what you're all about and we can discuss what you'd like to work on. Sound too formal? Sorry about that! It won't be. This is a passion project of mine and I want to have fun (with others!) doing it. That being said, due to the nature and importance of the project, I can't let any aspect of this escape my review or criticism. I hope you feel the same way as well.
 
 ## Why HoneyBabel?
 
 # Gratuity
-A tremendous **"THANK YOU!"** is in order to everyone who has aided in the HoneyBabel project over the months!
+A tremendous **"THANK YOU!"** is in order to everyone who has aided in the HoneyBabel project over the months! Which is, so far, not many.
+
+Thanks, jtan189!
 
 # The Algorithm
 The general flow of the algorithm is
@@ -53,11 +58,3 @@ The general flow of the algorithm is
 7. Return set of honeywords and index of sugarword
 
 ## A Diagram
-
-## String Categories
-These should be numbered so chaffing strategies can be associated.
-
-A hierarchical tree may also be appropriate such that a chaffing strategy associated with a string category may be applied to all of its children.
-
-## Chaffing Strategies
-These should be numbered so string categories can be associated

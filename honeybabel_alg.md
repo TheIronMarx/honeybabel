@@ -38,6 +38,7 @@ There will probably need to be more characteristics or hierarchical expansion of
 An order to the characteristic tests may also matter due to a number possibly representing a letter or word in a password. If a user's password is *2cool4school935*, it would be more beneficial to test for identifiable words in the password first (assuming, of course, we can detect 2 as to or too and 4 as for) and then stray numbers at the end in a latter test.
 
 After a password's respective category (collection of characteristics) is calculated, we should be able to choose one of several applicable chaffing strategies and fill a bucket with chaff.
+
 ---
 
 # The Algorithm
@@ -45,8 +46,7 @@ After a password's respective category (collection of characteristics) is calcul
 1. Input: A password and number of honeywords desired.
 	* Number of honeywords should be factor of five for simplicity's sake. At least until somebody can prove to me that static buckets isn't a good idea.
 * Generate buckets such that each bucket has five possible honeywords
-* Place password in a bucket
-* Fill bucket with chaff from appropriate strategy
+* Place password in a bucket and fill remainder of with chaff from appropriate strategy
 * Fill other buckets with respective chaffing strategies
 	* This is the most difficult problem
 * Shuffle final set of honeywords in from all buckets.
@@ -54,4 +54,9 @@ After a password's respective category (collection of characteristics) is calcul
 * Output: A set of honeywords and index of sugarword in the set.
 
 ## 1. Input
-Whether an implementation of HoneyBabel is used within an entire Honeywords implementation or as a stand alone honeywords generation program, the algorithm needs input. A password *x* and multiple of five *k* honeywords desired.
+Whether an implementation of HoneyBabel is used within an entire Honeywords implementation or as a stand alone honeywords generation program, the algorithm needs input. A password *x* and multiple of five *k* honeywords desired are required.
+
+## 2. Generate Buckets
+Given *k* honeywords desired, we need *n* buckets where k/n = 5.
+
+The strategy behind buckets is simple, but difficult to prove its effectiveness (like much of the rest of HoneyBabel). The idea is that with buckets, an additional layer of difficulty is presented to an adversary who has decrypted much or all of the authentication database. Because the sugarword exists in a bucket with several sweetwords which *look* like the sugarword, if ever a poor chaffing strategy was chosen (something we wish to minimize anyway) and buckets did not exist, it would theoretically be more likely for the adversary to spot the sugarword amongst the honeywords. Were buckets introduced to this worst-case-scenario, the password would have only been more obvious as the correct password in its respective buckets. As red herrings, buckets containing other strings which appear as passwords present a trap. Ultimately, it's a means of making the adversary's move a little less obvious.
