@@ -31,16 +31,24 @@ This document is mostly initial thoughts on the inner-workings of the algorithm.
 
 As a rough example of applying characteristics to a password, the password *dingdongdaddy* has a category of zero-A-delta-red. The password *123fastchthn!!* has a category of three-C-beta-indigo.
 
+Characteristics need to be named in a manner that makes seeing which category a string is easy. Essentially, a string's determined category and chaffing strategy need to be human-readable for testing and verification purposes.
+
 There will probably need to be more characteristics or hierarchical expansion of these characteristics.
 
 ---
 
-An order to the characteristic tests may also matter due to a number possibly representing a letter or word in a password. If a user's password is *2cool4school935*, and God help you if it is, it would be more beneficial to test for identifiable words in the password first (assuming, of course, we can detect 2 as to or too and 4 as for) and then stray numbers at the end in a latter test.
+An order to the characteristic tests may also matter due to a number possibly representing a letter or word in a password. If a user's password is *2cool4school935*, it would be more beneficial to test for identifiable words in the password first (assuming, of course, we can detect 2 as to or too and 4 as for) and then stray numbers at the end in a latter test.
 
 After a password's respective category (collection of characteristics) is calculated, we should be able to choose one of several applicable chaffing strategies and fill a bucket with chaff.
 
 # The Algorithm
 
 1. Input: A password and number of honeywords desired.
-* Generate
+	* Number of honeywords should be factor of five for simplicity's sake. At least until somebody can prove to me that static buckets isn't a good idea.
+* Generate buckets such that each bucket has five possible honeywords
+* Place password in a bucket
+* Fill bucket with chaff from appropriate strategy
+* Fill other buckets with respective chaffing strategies
+* Shuffle final set of honeywords in from all buckets.
+* Search for sugarword in set and record index
 * Output: A set of honeywords and index of sugarword in the set.
