@@ -1,3 +1,5 @@
+This document is mostly initial thoughts on the inner-workings of the algorithm. It's rather informal and certainly tentative, but I'd prefer to keep all of these ideas on the record.
+
 Goals of algorithm
 	* Every set of honeywords generated must have the same pattern such that the output of the algorithm does not hint at the characteristics of the password.
 	* Sweetwords must be typo-resistant.
@@ -27,4 +29,4 @@ There will probably need to be more characteristics or hierarchical expansion of
 
 An order to the characteristic tests may also matter due to a number possibly representing a letter or word in a password. If a user's password is *2cool4school935*, and God help you if it is, it would be more beneficial to test for identifiable words in the password first (assuming, of course, we can detect 2 as to or too and 4 as for) and then stray numbers at the end in a latter test.
 
-After a password's respective category (collection of characteristics) is calculated,
+After a password's respective category (collection of characteristics) is calculated, we should be able to choose chaffing strategies
