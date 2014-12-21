@@ -49,6 +49,7 @@ Thanks, jtan189!
 
 # The Algorithm
 The general flow of the algorithm is
+
 1. Receive string input of password
 
 2. Determine category or categories of string
