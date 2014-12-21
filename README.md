@@ -48,6 +48,8 @@ A tremendous **"THANK YOU!"** is in order to everyone who has aided in the Honey
 Thanks, jtan189!
 
 # The Algorithm
+For a more comprehensive look at the algorithm, [see the corresponding document](/honeybabel_alg.md).
+
 The general flow of the algorithm is
 
 1. Receive string input of password
