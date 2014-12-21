@@ -50,11 +50,17 @@ Thanks, jtan189!
 # The Algorithm
 The general flow of the algorithm is
 1. Receive string input of password
+
 2. Determine category or categories of string
+
 3. Choose number of buckets
+
 4. Place password in bucket and produce chaff to fill bucket
+
 5. Fill remaining buckets with respective strategy's chaff
+
 6. Shuffle set of honeywords and locate password
+
 7. Return set of honeywords and index of sugarword
 
 ## A Diagram
