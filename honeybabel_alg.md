@@ -6,11 +6,12 @@ This document is mostly initial thoughts on the inner-workings of the algorithm.
 	* Every set of honeywords generated must have the same pattern such that the output of the algorithm does not hint at the characteristics of the password.
 	* Sweetwords must be typo-resistant.
 	* Minimize or eliminate external libraries dependencies.
-	* Language-agnostic -- It would be nice to have pseducode in several different styles, and several different implementations including C, Perl, Java, Python, and R.
+	* Language-agnostic
+		* It would be nice to have pseducode and several different implementations including C, Perl, Java, Python, and R.
 
 # High-level design
 	* Given an input password, this algorithm should identify its characteristics and produce chaffing accordingly.
-	* For a given k>30 sweetwords to generate, k/n=5 buckets will be created. n-1 buckets will contain 5 sweetwords. 1 bucket will contain the sugarword and 4 sweetwords. Each bucket's honeywords will have a similar pattern through identical chaffing strategies.
+	* For a given k>20 sweetwords to generate, k/n=5 buckets will be created. n-1 buckets will contain 5 sweetwords. 1 bucket will contain the sugarword and 4 sweetwords. Each bucket's honeywords will have a similar pattern through identical chaffing strategies.
 		* Perhaps buckets should be jagged based on RNG.
 	* In addition to the characteristics, their ratio in respect to the length of the password, and each of their densities throughout the password will matter to the generation.
 		* I wish I could remember what the hell I meant here.
